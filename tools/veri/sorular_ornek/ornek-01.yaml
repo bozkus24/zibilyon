@@ -1,0 +1,26 @@
+# Soru kaydı şeması (ÖRNEK). Gerçek sorular git dışındaki
+# .server-private/zibilyon/sorular/ altında durur; bu dosya yalnız alanları gösterir.
+id: ornek-01
+metin: "Bir ... söyle"
+tip: cins            # cins | ozel | kapali
+kategori: genel      # tekrar/denge takibi (aynı kategori >= 45 gün arayla)
+bilgi_agirlikli: false
+bolgesel: null       # ör. istanbul (haftada en çok bir kez)
+beklenen_sayi: null  # kapalı kümede beklenen eleman sayısı (ör. 81)
+wikidata:            # ?x değişkenini bağlayan SPARQL WHERE parçaları; QID'ler sorgulanarak bulunur
+  - "?x wdt:P31/wdt:P279* wd:Q... ."
+wikidata_dogrula: null  # sınıf sonuçlarını ek koşulla süz (toplu VALUES sorgusu)
+dogrulama: null         # LLM/editör adlarını Wikidata'ya çözerken aranan koşul
+trwiki_zorunlu: false
+haric_p31: []           # bu türlerin örnekleri elenir (ör. Q4886 kültür çeşidi)
+haric_desen: []         # normalize edilmiş adda arama yapan düzenli ifadeler
+etiket_sil: []          # etiketten silinecek düzenli ifadeler (ör. " ili$")
+cesit_filtre: true      # "X elması" gibi çeşit gürültüsünü at (yalnız Wikidata kaynaklı)
+kapsam_notu: "Neyin kabul edilip edilmediği"
+red_listesi: []         # 'kategoriye uymuyor' mesajı alan girdiler
+celiskili: []           # başka soruda farklı anlamı olanlar (rapor)
+es_sesli: []            # S_frek kullanılmaz
+niteleyiciler: []       # "açık mavi" -> "mavi" (renk gibi sorularda)
+ek_kaldir: []           # "Trabzonspor" -> "trabzon" ek anahtarı (kulüp gibi)
+takma: {}               # kanonik ad -> [takma adlar] (editör)
+cevher: null            # editörün seçtiği "günün cevheri"

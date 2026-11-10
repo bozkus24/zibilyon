@@ -1,0 +1,13 @@
+# Zibilyon veri hattı (Python 3.13). Sabit sürümler: aynı önbellek -> aynı çıktı.
+wordfreq==3.1.1
+requests==2.32.3
+pandas==2.2.3
+PyYAML==6.0.2
+pytest==8.3.4
+fonttools==4.55.3
+Brotli==1.1.0
+# wordfreq bağımlılıkları
+ftfy==6.3.1
+langcodes==3.5.1
+msgpack==1.2.4
+regex==2026.11.7

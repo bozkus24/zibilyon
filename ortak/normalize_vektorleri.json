@@ -1,0 +1,717 @@
+{
+ "aciklama": "Zibilyon ortak normalize/eşleştirme vektörleri. Üretici: tools/veri/vektor_uret.py",
+ "normalize": [
+  [
+   "  Elma  ",
+   "elma"
+  ],
+  [
+   "İSTANBUL",
+   "istanbul"
+  ],
+  [
+   "IĞDIR",
+   "ığdır"
+  ],
+  [
+   "Iğdır",
+   "ığdır"
+  ],
+  [
+   "Bursa'dan",
+   "bursadan"
+  ],
+  [
+   "Bursa’dan",
+   "bursadan"
+  ],
+  [
+   "ali-nazik",
+   "ali nazik"
+  ],
+  [
+   "Hünkâr  Beğendi",
+   "hünkar beğendi"
+  ],
+  [
+   "Kâğıt",
+   "kağıt"
+  ],
+  [
+   "Gülkurusu!",
+   "gülkurusu"
+  ],
+  [
+   "Ç,ş.ğ",
+   "ç ş ğ"
+  ],
+  [
+   "é",
+   "é"
+  ],
+  [
+   "Vişne\tçürüğü",
+   "vişne çürüğü"
+  ],
+  [
+   "",
+   ""
+  ],
+  [
+   "...",
+   ""
+  ],
+  [
+   "Âşık",
+   "aşık"
+  ],
+  [
+   "ÎMAN",
+   "iman"
+  ],
+  [
+   "Ümraniyespor",
+   "ümraniyespor"
+  ]
+ ],
+ "tablolar": {
+  "meyve": {
+   "tam": {
+    "elma": 0,
+    "çilek": 1,
+    "trabzon hurması": 2,
+    "trabzonhurması": 2,
+    "ağaç kavunu": 3,
+    "ağaçkavunu": 3,
+    "kayısı": 4,
+    "mandalina": 5,
+    "nar": 6,
+    "ali nazik": 7,
+    "alinazik": 7,
+    "kitap": 8,
+    "kaplan": 9,
+    "kiraz": 10,
+    "kira": 11,
+    "cennet elması": 2,
+    "cennetelması": 2,
+    "zerdali": 4
+   },
+   "kat": {
+    "elma": 0,
+    "cilek": 1,
+    "trabzon hurmasi": 2,
+    "trabzonhurmasi": 2,
+    "agac kavunu": 3,
+    "agackavunu": 3,
+    "kayisi": 4,
+    "mandalina": 5,
+    "nar": 6,
+    "ali nazik": 7,
+    "alinazik": 7,
+    "kitap": 8,
+    "kaplan": 9,
+    "kiraz": 10,
+    "kira": 11,
+    "cennet elmasi": 2,
+    "cennetelmasi": 2,
+    "zerdali": 4
+   },
+   "red": [
+    "domates",
+    "patlıcan",
+    "biber"
+   ],
+   "niteleyici": [],
+   "engel": [
+    "kaptan"
+   ]
+  },
+  "kulup": {
+   "tam": {
+    "galatasaray": 0,
+    "trabzonspor": 1,
+    "trabzon": 1,
+    "adana demirspor": 2,
+    "adanademirspor": 2,
+    "adana demir": 2,
+    "adanademir": 2,
+    "adanaspor": 3,
+    "adana": 3,
+    "bursaspor": 4,
+    "bursa": 4,
+    "gs": 0,
+    "cimbom": 0,
+    "ts": 1
+   },
+   "kat": {
+    "galatasaray": 0,
+    "trabzonspor": 1,
+    "trabzon": 1,
+    "adana demirspor": 2,
+    "adanademirspor": 2,
+    "adana demir": 2,
+    "adanademir": 2,
+    "adanaspor": 3,
+    "adana": 3,
+    "bursaspor": 4,
+    "bursa": 4,
+    "gs": 0,
+    "cimbom": 0,
+    "ts": 1
+   },
+   "red": [],
+   "niteleyici": [],
+   "engel": []
+  },
+  "renk": {
+   "tam": {
+    "mavi": 0,
+    "petrol mavisi": 1,
+    "petrolmavisi": 1,
+    "yeşil": 2
+   },
+   "kat": {
+    "mavi": 0,
+    "petrol mavisi": 1,
+    "petrolmavisi": 1,
+    "yesil": 2
+   },
+   "red": [
+    "kara"
+   ],
+   "niteleyici": [
+    "açık",
+    "koyu"
+   ],
+   "engel": []
+  },
+  "belirsiz": {
+   "tam": {
+    "kara deniz": 0,
+    "karadeniz": 0,
+    "ege bölgesi": 1,
+    "egebölgesi": 1,
+    "marmara": 2,
+    "ege": -1
+   },
+   "kat": {
+    "kara deniz": 0,
+    "karadeniz": 0,
+    "ege bolgesi": 1,
+    "egebolgesi": 1,
+    "marmara": 2,
+    "ege": -1
+   },
+   "red": [],
+   "niteleyici": [],
+   "engel": []
+  }
+ },
+ "eslesme": [
+  {
+   "tablo": "meyve",
+   "girdi": "elmalar",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "Elmayı",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "cilek",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 1,
+    "adim": "c"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "ÇİLEK",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 1,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "trabzon hurmasi",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 2,
+    "adim": "c"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "cennet elması",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 2,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "Trabzon-Hurması",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 2,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "agac kavunu",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 3,
+    "adim": "c"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "ağaçkavunu",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 3,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "zerdali",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 4,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "mandalna",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 5,
+    "adim": "d"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "mandalinaa",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 5,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "mandalnaa",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 5,
+    "adim": "d"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "mandal",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "nur",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "nar",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 6,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "narlar",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 6,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "narı",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 6,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "domates",
+   "beklenen": {
+    "tur": "kategori_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "domatesler",
+   "beklenen": {
+    "tur": "kategori_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "DOMATES'i",
+   "beklenen": {
+    "tur": "kategori_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "ali-nazik",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 7,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "alinazik",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 7,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "Ali Nâzik",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 7,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kitabı",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 8,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kitaplar",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 8,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kaplann",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 9,
+    "adim": "d"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kaptan",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kirazlar",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 10,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kiraa",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 11,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "kirz",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 10,
+    "adim": "d"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "krz",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "patlican",
+   "beklenen": {
+    "tur": "kategori_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "biberr",
+   "beklenen": {
+    "tur": "kategori_disi"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "  elma  ",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "?",
+   "beklenen": {
+    "tur": "bos"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "",
+   "beklenen": {
+    "tur": "bos"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "elmaa",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "meyve",
+   "girdi": "armut",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "gs",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "Cimbom",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "trabzon",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 1,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "adana",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 3,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "adana demir",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 2,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "bursa",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 4,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "Galatasaray'ı",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "b"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "galatasray",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "d"
+   }
+  },
+  {
+   "tablo": "kulup",
+   "girdi": "fenerbahçe",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "renk",
+   "girdi": "açık mavi",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 0,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "renk",
+   "girdi": "koyu yeşil",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 2,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "renk",
+   "girdi": "petrol mavisi",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 1,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "renk",
+   "girdi": "açık petrol mavisi",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 1,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "renk",
+   "girdi": "kara",
+   "beklenen": {
+    "tur": "kategori_disi"
+   }
+  },
+  {
+   "tablo": "renk",
+   "girdi": "koyu",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "belirsiz",
+   "girdi": "ege",
+   "beklenen": {
+    "tur": "liste_disi"
+   }
+  },
+  {
+   "tablo": "belirsiz",
+   "girdi": "marmara",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 2,
+    "adim": "a"
+   }
+  },
+  {
+   "tablo": "belirsiz",
+   "girdi": "ege bölgesi",
+   "beklenen": {
+    "tur": "kabul",
+    "i": 1,
+    "adim": "a"
+   }
+  }
+ ],
+ "tekrar": [
+  {
+   "tablo": "meyve",
+   "girdiler": [
+    "elma",
+    "Elma"
+   ],
+   "beklenen": [
+    "kabul",
+    "tekrar"
+   ]
+  },
+  {
+   "tablo": "meyve",
+   "girdiler": [
+    "armut",
+    "ARMUT"
+   ],
+   "beklenen": [
+    "liste_disi",
+    "tekrar"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+# Yayın çıktısı
+/dist/
+# Gizli anahtar ve düz metin cevap verisi: ASLA commit edilmez
+/.env
+/.env.*
+/.server-private/
+# Yerel Python ortamı
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
